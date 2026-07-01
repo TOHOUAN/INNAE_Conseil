@@ -42,4 +42,13 @@
       window.scrollTo({ top: y, behavior: "smooth" });
     });
   });
-})();
+})(); 
+ 
+  document.querySelectorAll(".expertise-toggle").forEach((button) => {
+    button.addEventListener("click", () => {
+        const item = button.closest(".expertise-item");
+        item.classList.toggle("active");
+    });
+
+});
+
